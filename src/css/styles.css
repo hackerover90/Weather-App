@@ -6,3 +6,28 @@ body {
     -o-background-size: cover;
     min-height: 100vh;
   }
+
+  #info {
+    margin-bottom: 15rem;
+  }
+
+  #date {
+    margin-right: 3rem;
+  }
+
+  #location {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  #current-weather {
+    font-size: 5rem;
+    block-size: fit-content;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #weather-body-info {
+    block-size: fit-content;
+    width: fit-content;
+  }

@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>Weather App</title>
 
 </head>
 <body>
-    <div></div>
+    <div class="container-fluid d-flex min-vh-100">
+        <div id="search" class="my-3">
+            <form>
+                <input type="text" placeholder="Enter City Name">
+            </form>
+        </div>
+        <div id="info" class="container-fluid pb-5 d-flex align-self-center justify-content-center">
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <div id="weather-header" class="d-flex">
+                    <div id="date">November 21, 2022</div>
+                    <div id="time">8:53 AM</div>
+                </div>
+                <div id="weather-body">
+                    <div id="location" class="text-center">Kingston, Canada</div>
+                    <div id="weather-body-info" class="container-fluid d-flex">
+                        <div id="weather-info" class="d-flex flex-column border-end border-dark">
+                            <div id="current-weather-container" class="container-fluid d-flex">
+                                <div id="current-weather">-2</div>
+                                <div id="current-weather-unit" class="pt-3 temp-unit">°C</div>
+                                <div id="logo-container" class="container-fluid">
+                                    <img id="logo" src="#" alt="">
+                                    <div id="logo-description">Partly Cloudy</div>
+                                </div>
+                            </div>
+                            <div id="high&low" class="d-flex justify-content-evenly">
+                                <div>H: <span id="high">5</span><span class="temp-unit">°C</span></div>
+                                <div>L: <span id="low">-3</span><span class="temp-unit">°C</span></div>
+                            </div>
+                        </div>
+                        <div id="weather-description" class="mx-4 d-flex flex-column justify-content-center">
+                            <div>Feels Like: <span id="feel"></span></div>
+                            <div>Precipitation: <span id="precipitation"></span></div>
+                            <div>Humidity: <span id="humidity"></span></div>
+                            <div>Wind: <span id="wind"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather-footer"></div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
